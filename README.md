@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub repo](https://your-solution-url.com)
+- Live Site URL: [GitHub page](https://krzysztofleczycki.github.io/advice-generator-app/)
 
 ## My process
 
@@ -60,7 +60,8 @@ Writing the advice generator, I trained three main issues:
 - writing HTTP 'get' request in two ways,
   
   XHR approatch:
-  ```js
+  
+ ```js
 const getAdvice = () =>{
     const xhr = new XMLHttpRequest();
     xhr.responseType='json';
