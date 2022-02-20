@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 340px) {
+  #advice-num {
+    font-size: 0.8rem;
+  }
+  #advice-quote {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 341px) {
+  #advice-quote {
+    font-size: 28px;
+  }
+}
+
+:root {
+  font-family: 'Manrope', sans-serif;
+}
+
+main {
+  background-color: #323a49;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .advice {
+  background-color: #4e5d73;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -ms-flex-preferred-size: 340px;
+      flex-basis: 340px;
+  padding: 0 18px;
+  margin: 30% 15px 0 15px;
+  -webkit-box-shadow: 20px 40px 100px #202733;
+          box-shadow: 20px 40px 100px #202733;
+}
+
+main .advice #advice-num {
+  margin-top: 48px;
+  color: #52ffa8;
+}
+
+main .advice #advice-quote {
+  color: #cee3e9;
+  text-align: center;
+  margin: 24px 0;
+}
+
+main .advice #advice-quote + img {
+  width: 95%;
+}
+
+main #advice-btn {
+  background-color: #52ffa8;
+  line-height: 0;
+  border: none;
+  padding: 24px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -36px;
+}
+
+main #advice-btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 40px #52ffa8;
+          box-shadow: 0 0 40px #52ffa8;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+main #advice-btn:active {
+  -webkit-box-shadow: 0 0 80px #8fffc7;
+          box-shadow: 0 0 80px #8fffc7;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 1em 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #202733;
+}
+
+@media (min-width: 600px) {
+  main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .advice {
+    margin: 0;
+    position: relative;
+    top: -36px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

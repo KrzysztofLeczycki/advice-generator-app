@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="main.js" async></script>
+  <title>Frontend Mentor | Advice generator app</title>
+  
+</head>
+<body>
+  <main>
+    <div class="advice">
+      <p id="advice-num">ADVICE #number</p>
+      <p id="advice-quote">Click dice to see advice. Check your luck</p>
+      <img srcset="./images/pattern-divider-mobile.svg 295w,
+                   ./images/pattern-divider-desktop.svg 444w"
+           sizes="(max-width: 600px) 295px,
+                  444px"
+          src="./images/pattern-divider-desktop.svg"
+          alt="">
+      <button id="advice-btn"><img src="./images/icon-dice.svg" alt="dice"></button>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://krzysztofleczycki.github.io/portfolio" target="_blank">Krzysztof Łęczycki</a>. Advices API from <a href="https://adviceslip.com" target="_blank">ADVICESLIP.COM</a>.
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 340px){
+    #advice-num{
+        font-size: 0.8rem;
+    }
+
+    #advice-quote{
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 341px){
+    #advice-quote{
+        font-size: 28px;
+    }
+}
+
+$primary-cyan: hsl(193, 38%, 86%);
+$primary-green: hsl(150, 100%, 66%);
+$lighter-green: hsl(150, 100%, 78%);
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: #202733;
+
+:root{
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    background-color: $dark-grayish-blue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .advice{
+        background-color: $grayish-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        flex-basis: 340px;
+        padding: 0 18px;
+        margin: 30% 15px 0 15px;
+        box-shadow: 20px 40px 100px $dark-blue;
+        
+        #advice-num{
+            margin-top: 48px;
+            color: $primary-green;
+        }
+
+        #advice-quote{
+            color: $primary-cyan;
+            text-align: center;
+            margin: 24px 0;
+        }
+
+        #advice-quote + img{
+            width: 95%;
+            }
+        }
+
+        #advice-btn{
+            background-color: $primary-green;
+            line-height: 0;
+            border: none;
+            padding: 24px;
+            border-radius: 50%;
+            position: relative;
+            bottom: -36px;
+
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0 0 40px $primary-green;
+                transition: box-shadow 0.5s;
+            }
+            &:active{
+                box-shadow: 0 0 80px $lighter-green;
+            }
+        }
+    }
+
+    .attribution{
+        position: fixed;
+        bottom: 0;
+        background-color: rgba($color: #ffffff, $alpha: 0.2);
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 1em 0;
+        font-size: 11px; 
+        text-align: center;
+
+        a{
+            color: $dark-blue;
+        }
+    }
+
+
+
+@media (min-width: 600px){
+    main{
+        align-items: center;
+
+        .advice{
+            margin: 0;
+            position: relative;
+            top: -36px;
+        }
+    }
+}
