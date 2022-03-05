@@ -32,7 +32,7 @@ xhr.send();
 //AJAX fetching function
 const getAdvice = async () =>{
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, {cache: "no-cache"});
         if (response.ok){
             const jsonResponse = await response.json();
             renderAdvice(jsonResponse);
